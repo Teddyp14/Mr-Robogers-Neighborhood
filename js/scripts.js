@@ -9,8 +9,12 @@ function roboger(input) {
 
     messageArray.forEach(function (element, i) {
         for (const digit of element) {
-            if (digit === numCheck[0]) {
+            if (digit === numCheck[1]) {
+                messageArray[i] = "Bop!"
+                break;
+            } else if (digit === numCheck[0]) {
                 messageArray[i] = "Beep!"
+
             }
         }
     })
@@ -18,3 +22,7 @@ function roboger(input) {
 
 }
 
+// if (digit === numCheck[2]) {
+//     messageArray[i] = "Won't you be my neighbor?";
+//     break;
+// }
