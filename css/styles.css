@@ -2,3 +2,14 @@ body {
     text-align: center;
     background-color: rgb(145, 132, 156)
 }
+
+label {
+    padding: 20px;
+    font-size: large;
+}
+
+button {
+    padding: 10px;
+    border-radius: 10%;
+
+}
