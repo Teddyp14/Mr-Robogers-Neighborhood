@@ -3,6 +3,10 @@ function robotRoger(input, userName) {
     const numCheck = ["1", "2", "3"]
     let messageArray = [];
 
+    if (num < 0) {
+        return "Error! No negative numbers, please!"
+    }
+
     for (let i = 0; i <= num; i++) {
         messageArray.push(i.toString());
     }

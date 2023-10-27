@@ -19,3 +19,7 @@ Expected Output: [0, 1, "Beep!", "Bop!", "Won't you be my neighbor?"]
 Test: "It will combine the array into a string, with each element separated by a comma and a space. 
 Code: robotRoger(3)
 Expected Output: 0, 1, "Beep!", "Bop!", "Won't you be my neighbor?"
+
+Test: "It will return an error message if a negative number is entered"
+Code: robotRoger(-1)
+Expected Output: "Error! No negative numbers, please!"
