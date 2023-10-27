@@ -10,22 +10,28 @@
 
 body {
     background-color: rgb(145, 132, 156);
+    margin: 0;
 }
 
 h1 {
     text-align: center;
     font-family: cursive;
-    font-size: 60px;
-    color: white;
-    text-shadow: -2px 2px 4px #000,
-        2px 2px 4px #000,
-        2px -2px 0 #000,
-        -2px -2px 0 #000;
+    font-size: 70px;
+    color: rgb(247, 5, 5);
+    text-shadow: -4px 4px 8px #ffffff,
+        4px 4px 4px #ffffff,
+        4px -4px 0 #ffffff,
+        -4px -4px 0 #ffffff;
+    background-image: url(https://misterrogers.org/wp-content/uploads/2018/09/Pinchable-Neighborhood-Cropped-smaller.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 100px;
 }
 
 .content {
     padding-left: 5%;
     padding-right: 5%;
+    margin-top: 5%;
 }
 
 label {
