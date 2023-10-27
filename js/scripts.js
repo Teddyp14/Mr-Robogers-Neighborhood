@@ -11,13 +11,19 @@ function roboger(input) {
         for (const digit of element) {
             if (digit === numCheck[2]) {
                 messageArray[i] = "Won't you be my neighbor?";
-            } else if (digit === numCheck[1]) {
+            }
+        }
+    });
+
+    messageArray.forEach(function (element, i) {
+        for (const digit of element) {
+            if (digit === numCheck[1]) {
                 messageArray[i] = "Bop!";
+                break;
             } else if (digit === numCheck[0]) {
                 messageArray[i] = "Beep!"
             }
         }
-    })
+    });
     console.log(messageArray);
-
 }
