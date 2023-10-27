@@ -1,4 +1,4 @@
-function roboger(input) {
+function roboger(input, userName) {
     const num = parseInt(input)
     const numCheck = ["1", "2", "3"]
     let messageArray = [];
@@ -10,7 +10,7 @@ function roboger(input) {
     messageArray.forEach(function (element, i) {
         for (const digit of element) {
             if (digit === numCheck[2]) {
-                messageArray[i] = "Won't you be my neighbor?";
+                messageArray[i] = "Won't you be my neighbor, " + userName + "?";
             }
         }
     });
@@ -34,10 +34,11 @@ function handleForm(event) {
     event.preventDefault();
     const result = document.querySelector("h2#result");
     const userInput = document.querySelector("input#number").value;
+    const userName = document.querySelector("input#name").value;
 
     result.innerText = "";
 
-    result.append(roboger(userInput));
+    result.append(roboger(userInput, userName));
 }
 
 window.addEventListener("load", function () {
