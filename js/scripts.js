@@ -32,17 +32,17 @@ function robotRoger(input, userName) {
 
 function handleForm(event) {
     event.preventDefault();
+    const resultContainer = document.getElementById("result-container");
     const result = document.querySelector("h2#result");
     const userInput = document.querySelector("input#number").value;
     const userName = document.querySelector("input#name").value;
 
-    result.classList.add("hidden");
+    resultContainer.classList.add("hidden");
 
     const newResult = robotRoger(userInput, userName);
     result.innerText = newResult;
 
-    result.classList.remove("hidden");
-
+    resultContainer.classList.remove("hidden");
 }
 
 window.addEventListener("load", function () {

@@ -41,6 +41,7 @@ button {
     font-size: 30px;
     border-radius: 10px;
     margin-top: 10px;
+    padding: 10px;
     font-family: cursive;
 
 }
@@ -60,4 +61,13 @@ h2 {
     border-radius: 30px;
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 0%;
+}
+
+img {
+    border: 3px solid black;
+    border-radius: 30px;
+    width: 30%;
+    height: auto;
+
 }
