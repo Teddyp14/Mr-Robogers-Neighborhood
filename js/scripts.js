@@ -1,4 +1,4 @@
-function roboger(input, userName) {
+function robotRoger(input, userName) {
     const num = parseInt(input)
     const numCheck = ["1", "2", "3"]
     let messageArray = [];
@@ -38,7 +38,7 @@ function handleForm(event) {
 
     result.innerText = "";
 
-    result.append(roboger(userInput, userName));
+    result.append(robotRoger(userInput, userName));
 }
 
 window.addEventListener("load", function () {
