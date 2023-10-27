@@ -36,9 +36,13 @@ function handleForm(event) {
     const userInput = document.querySelector("input#number").value;
     const userName = document.querySelector("input#name").value;
 
-    result.innerText = "";
+    result.classList.add("hidden");
 
-    result.append(robotRoger(userInput, userName));
+    const newResult = robotRoger(userInput, userName);
+    result.innerText = newResult;
+
+    result.classList.remove("hidden");
+
 }
 
 window.addEventListener("load", function () {
