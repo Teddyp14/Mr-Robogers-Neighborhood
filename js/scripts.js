@@ -8,8 +8,10 @@ function roboger(input) {
     }
 
     messageArray.forEach(function (element, i) {
-        if (numCheck[0].includes(element)) {
-            messageArray[i] = "Beep!";
+        for (const digit of element) {
+            if (digit === numCheck[0]) {
+                messageArray[i] = "Beep!"
+            }
         }
     })
     console.log(messageArray);
