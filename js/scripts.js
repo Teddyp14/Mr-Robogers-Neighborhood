@@ -30,7 +30,7 @@ function robotRoger(input, userName) {
         }
     });
 
-    messageString = messageArray.join(", ");
+    const messageString = messageArray.join(", ");
     return messageString;
 }
 
