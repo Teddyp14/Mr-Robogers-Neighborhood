@@ -29,3 +29,17 @@ function roboger(input) {
     messageString = messageArray.join(", ");
     return messageString;
 }
+
+function handleForm(event) {
+    event.preventDefault();
+    const result = document.querySelector("h2#result");
+    const userInput = document.querySelector("input#number").value;
+
+    result.innerText = "";
+
+    result.append(roboger(userInput));
+}
+
+window.addEventListener("load", function () {
+    document.querySelector("form#robo-rogers").addEventListener("submit", handleForm);
+})
