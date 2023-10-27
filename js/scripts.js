@@ -1,8 +1,8 @@
 function roboger(input) {
     const num = parseInt(input)
     const numCheck = ["1", "2", "3"]
-
     let messageArray = [];
+
     for (let i = 0; i <= num; i++) {
         messageArray.push(i.toString());
     }
@@ -25,5 +25,7 @@ function roboger(input) {
             }
         }
     });
-    console.log(messageArray);
+
+    messageString = messageArray.join(", ");
+    return messageString;
 }
