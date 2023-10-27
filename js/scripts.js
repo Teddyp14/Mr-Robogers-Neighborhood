@@ -47,6 +47,7 @@ function handleForm(event) {
     result.innerText = newResult;
 
     resultContainer.classList.remove("hidden");
+    resultContainer.classList.add("visible");
 }
 
 window.addEventListener("load", function () {
