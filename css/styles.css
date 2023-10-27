@@ -1,15 +1,36 @@
 body {
+    background-color: rgb(145, 132, 156);
+}
+
+h1 {
     text-align: center;
-    background-color: rgb(145, 132, 156)
+    font-family: cursive;
+    font-size: 60px;
+    color: white;
+    text-shadow: -2px 2px 4px #000,
+        2px 2px 4px #000,
+        2px -2px 0 #000,
+        -2px -2px 0 #000;
+}
+
+.content {
+    padding-left: 5%;
 }
 
 label {
-    padding: 20px;
-    font-size: large;
+    font-size: 30px;
+    margin-right: 100%;
+
+}
+
+input {
+    margin-right: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 button {
-    padding: 10px;
-    border-radius: 10%;
+    font-size: 30px;
+    margin-top: 10px;
 
 }
