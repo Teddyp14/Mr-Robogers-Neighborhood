@@ -29,7 +29,7 @@ This web application takes a number from the user and returns a list of values f
 
 ## Known Bugs
 
-* Unknown at this time, but future updates may cause issues. 
+* The page allows you to scroll to the right, showing a blank right hand side of the page. Solutions in progress. 
 
 ## License
 

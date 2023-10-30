@@ -14,7 +14,7 @@ function robotRoger(input, userName) {
     messageArray.forEach(function (element, i) {
         for (const digit of element) {
             if (digit === numCheck[2]) {
-                messageArray[i] = '"Won' + "'t you be my neighbor, " + userName + '?"';
+                messageArray[i] = "\"Won\'t you be my neighbor, " + userName + '?"';
             }
         }
     });
@@ -32,7 +32,7 @@ function robotRoger(input, userName) {
 
     const messageString = messageArray.join(", ");
     return messageString;
-}
+};
 
 function handleForm(event) {
     event.preventDefault();
@@ -48,8 +48,8 @@ function handleForm(event) {
 
     resultContainer.classList.remove("hidden");
     resultContainer.classList.add("visible");
-}
+};
 
 window.addEventListener("load", function () {
     document.querySelector("form#robo-rogers").addEventListener("submit", handleForm);
-})
+});
